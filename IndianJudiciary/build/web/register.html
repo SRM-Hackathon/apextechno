@@ -1,0 +1,134 @@
+<html>
+<head>
+<style>
+ body {
+    background-color: #D6DBDF   ;
+         }
+			       
+				   ul {
+                     list-style-type: none;
+                      margin: 0;
+                      padding: 0;
+                        overflow: hidden;
+                         background-color: #333;
+                       }
+
+           li {
+             float: left;
+               }
+
+            li a {
+                display: block;
+                color: white;
+                 text-align: center;
+                 padding: 14px 16px;
+                  text-decoration: none;
+                 }
+
+                  li a:hover {
+                      background-color: #FF0000;
+                           }
+			         li a.active {
+                      background-color: #FF0000;
+                       color: white;
+                      } 
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    display: inline-block;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<center>
+				     <B>
+			      <font color="#000000" size="3"><h1 align="left">CAR RENTAL SERVICES</h1></font>
+				      </B>
+				</center>
+				<ul>
+                   <li><a class="active" href="#home">Home</a></li>
+                   <li><a href="#Contact-us">Contact-us</a></li>
+                   <li><a href="#about">About</a></li>
+</ul>             
+<h2 align="center">Register</h2>
+
+<form action="InsertRegister" method="post" style="border:1px solid #ccc">
+  <div class="container">
+   <label><b>judge id</b></label>
+    <input type="text" placeholder="Enter judge id" name="txtJudgeid" required>
+	<br>
+	 <label><b>judge user</b></label>
+    <input type="text" placeholder="Enter user name" name="txtJudgeuser" required>
+	<br>
+   
+	<label><b> judge Password</b></label>
+    <input type="password" placeholder="Enter Password" name="txtPassword" required>
+     <br>
+   <label><b> Address</b></label>
+    <input type="text" placeholder="Enter address" name="txtAddress" required>
+     <br>
+	
+           <label><b>city id</b></label>
+    <input type="text" placeholder="Enter city id" name="txtCityid" required>
+	  <br>
+           <label><b>state id</b></label>
+    <input type="text" placeholder="Enter state id" name="txtStateid" required>
+	  <br>
+	 <label><b>Contact no.</b></label>
+    <input type="text" placeholder="Enter Contact no." name="txtContactno" required>
+	  <br>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit"  class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+</body>
